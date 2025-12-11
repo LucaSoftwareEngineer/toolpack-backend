@@ -1,6 +1,7 @@
 import sequelize from "./tools/db_conn.js";
 import Pacco from "./models/Pacco.js";
 import { registraPacco } from "./api/registra_pacco.js";
+import { impostaSpeditoPacco } from "./api/imposta_spedito_pacco.js";
 import express from "express";
 
 const main = async () => {
@@ -17,6 +18,7 @@ const app = express();
 app.use(express.json());
 
 app.post("/pacco/registra", registraPacco);
+app.put("/pacco/spedito", impostaSpeditoPacco);
 
 app.listen(3000, () => {
   console.log("Server in ascolto sulla porta 3000");

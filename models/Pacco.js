@@ -38,6 +38,14 @@ const Pacco = sequelize.define(
       type: DataTypes.BOOLEAN,
       field: "pacc_consegnato",
     },
+    dataSpezione: {
+      type: DataTypes.DATE,
+      field: "pacc_data_spezione",
+    },
+    dataConsegna: {
+      type: DataTypes.DATE,
+      field: "pacc_data_consegna",
+    },
   },
   {
     tableName: "pacchi",

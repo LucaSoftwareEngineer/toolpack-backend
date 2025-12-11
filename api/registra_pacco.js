@@ -48,7 +48,7 @@ export const registraPacco = async (req, res) => {
 
   if (
     paccoData.spedito &&
-    (paccoData.dataSpezione == "" || !paccoData.dataSpezione)
+    (paccoData.dataSpedizione == "" || !paccoData.dataSpedizione)
   ) {
     res.status(400).json({
       message:
@@ -75,7 +75,7 @@ export const registraPacco = async (req, res) => {
       prezzo: paccoData.prezzo,
       spedito: paccoData.spedito,
       consegnato: paccoData.consegnato,
-      dataSpezione: paccoData.dataSpezione,
+      dataSpedizione: paccoData.dataSpedizione,
       dataConsegna: paccoData.dataConsegna,
     });
     res.status(201).json({ message: "pacco registrato con successo" });

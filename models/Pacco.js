@@ -38,7 +38,7 @@ const Pacco = sequelize.define(
       type: DataTypes.BOOLEAN,
       field: "pacc_consegnato",
     },
-    dataSpezione: {
+    dataSpedizione: {
       type: DataTypes.DATE,
       field: "pacc_data_spezione",
     },

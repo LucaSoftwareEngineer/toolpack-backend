@@ -18,11 +18,11 @@ const Pacco = sequelize.define(
       type: DataTypes.STRING,
       field: "pacc_destinatario",
     },
-    mittente_indirizzo: {
+    mittenteIndirizzo: {
       type: DataTypes.STRING,
       field: "pacc_mittente_indirizzo",
     },
-    destinatario_indirizzo: {
+    destinatarioIndirizzo: {
       type: DataTypes.STRING,
       field: "pacc_destinatario_indirizzo",
     },

@@ -2,7 +2,7 @@ import { Sequelize } from 'sequelize';
 
 const sequelize = new Sequelize('TOOLPACK', 'sa', 'admin', {
     dialect: 'mssql',
-    host: 'localhost',
+    host: 'host.docker.internal',
     dialectOptions: {
         encrypt: true
     }

@@ -6,6 +6,7 @@ import { impostaSpeditoPacco } from "./api/imposta_spedito_pacco.js";
 import express from "express";
 import { impostaConsegnatoPacco } from "./api/impasta_consegnato_pacco.js";
 import { registrazioneUtente } from "./api/registrazione_utente.js";
+import { loginUtente } from "./api/login_utente.js";
 
 const main = async () => {
   try {
@@ -24,6 +25,7 @@ app.post("/pacco/registra", registraPacco);
 app.put("/pacco/spedito", impostaSpeditoPacco);
 app.put("/pacco/consegnato", impostaConsegnatoPacco);
 app.post("/utente/registrazione", registrazioneUtente);
+app.post("/utente/login", loginUtente);
 
 app.listen(3000, () => {
   console.log("Server in ascolto sulla porta 3000");

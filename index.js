@@ -1,5 +1,6 @@
 import sequelize from "./tools/db_conn.js";
 import Pacco from "./models/Pacco.js";
+import Utente from "./models/Utente.js";
 import { registraPacco } from "./api/registra_pacco.js";
 import { impostaSpeditoPacco } from "./api/imposta_spedito_pacco.js";
 import express from "express";
